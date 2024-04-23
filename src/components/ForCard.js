@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 
 export const ForCard = ({ info }) => {
-  const { icon, text } = info.day.condition;
+  const { icon } = info.day.condition;
   const { maxtemp_c } = info.day;
   const date = info ? dayjs(info.date).format("ddd") : "";
 

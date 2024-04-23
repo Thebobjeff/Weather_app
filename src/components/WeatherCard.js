@@ -2,13 +2,17 @@ import { useState } from "react";
 import { ForCard, SearchBar } from "./index";
 
 export const WeatherCard = ({ data }) => {
-  const [location, setLocation] = useState("NewYork");
+  const [location, setLocation] = useState("New York");
+
   if (!data || !data.current || !data.current.condition) {
     return <div>No data available</div>;
   }
+  const { region } = data.location;
   const { icon, text } = data.current.condition;
   const { temp_c } = data.current;
-
+  if (location !== region) {
+    setLocation(region);
+  }
   return (
     <div className="w-3/6 p-8 mx-auto mt-16 rounded-lg bg-slate-100 text-gray-800 border shadow-md">
       <SearchBar />

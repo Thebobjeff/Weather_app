@@ -2,15 +2,14 @@ import { useEffect, useState } from "react";
 import API_KEY from "../components/api_key";
 import { useSelector } from "react-redux";
 
-export const useFetch = () => {
+export const useFetch = (forcastlen) => {
   const [location, setLocation] = useState({});
   const area = useSelector((state) => state.locationState.location);
-
   useEffect(() => {
     const fetchData = async () => {
       try {
         const reply = await fetch(
-          `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${area}&days=7&aqi=no&alerts=no`
+          `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${area}&days=${forcastlen}&aqi=no&alerts=no`
         );
 
         if (!reply.ok) {

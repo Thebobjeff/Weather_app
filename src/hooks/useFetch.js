@@ -30,6 +30,6 @@ export const useFetch = (forcastlen) => {
       }
     };
     fetchData();
-  }, [area]);
+  }, [area, forcastlen]);
   return location;
 };

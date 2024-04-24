@@ -21,7 +21,7 @@ export const Homepage = () => {
         setForcastlen(7);
       }
     },
-    { size, forcastlen }
+    { forcastlen }
   );
   const data = useFetch(forcastlen);
 

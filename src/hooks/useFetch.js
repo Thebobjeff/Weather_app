@@ -9,7 +9,7 @@ export const useFetch = (forcastlen) => {
     const fetchData = async () => {
       try {
         const reply = await fetch(
-          `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${area}&days=${forcastlen}&aqi=no&alerts=no`
+          `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${area}&days=${forcastlen}&aqi=no&alerts=no`
         );
 
         if (!reply.ok) {

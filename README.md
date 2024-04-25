@@ -2,7 +2,7 @@
 
 Welcome to Ava Weather, the 4th masterpiece in my web app collection! 🚀 Thank you for stopping by and taking the time to check it out. Your feedback is always appreciated! 🙏 
 
-## Live Page [here](https://app.netlify.com/sites/avaweather/overview)
+## Live Page [here](https://avaweather.netlify.app/)
 
 ## Overview
 
@@ -23,7 +23,7 @@ Ready to dive in? Follow these simple steps:
 
 1. **Install Dependencies:** Run `npm install` to grab all the necessary Node modules.
 2. **Start the Server:** Fire up your local host with `npm start`.
-3. **Explore:** Don't forget to visit the live site [here](https://app.netlify.com/sites/avaweather/overview) to see Ava Weather in action! 🌍
+3. **Explore:** Don't forget to visit the live site [here](https://avaweather.netlify.app/) to see Ava Weather in action! 🌍
 
 ## Feedback
 

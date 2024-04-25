@@ -20,12 +20,14 @@ export const WeatherCard = ({ data }) => {
   }
   return (
     <div className="sm:w-10/12 w-3/6 p-8 mx-auto my-20 rounded-lg bg-slate-100 text-gray-800 border shadow-md">
-      <SearchBar />
+      <div className="sm:hidden">
+        <SearchBar />
+      </div>
       <div className=" mt-8 mb-6 flex flex-col items-center">
         <h1 className="sm:text-5xl text-6xl font-semibold">
           {location ? location : "Loading..."}
         </h1>
-        <h2 className="sm:text-3xl text-4xl font-semibold">{date}</h2>
+        <h2 className="sm:text-2xl text-4xl font-semibold">{date}</h2>
       </div>
       <div className="flex justify-between space-x-8">
         <div className="flex flex-col items-center">

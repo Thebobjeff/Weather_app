@@ -15,9 +15,11 @@ export const WeatherCard = ({ data }) => {
   const { region } = data.location;
   const { icon, text } = data.current.condition;
   const { temp_c, feelslike_c } = data.current;
+
   if (location !== region) {
     setLocation(region);
   }
+
   return (
     <div className="sm:w-10/12 w-3/6 p-8 mx-auto my-20 rounded-lg bg-slate-100 text-gray-800 border shadow-md">
       <div className="sm:hidden">

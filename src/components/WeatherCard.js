@@ -38,7 +38,7 @@ export const WeatherCard = ({ data }) => {
           <h3 className="text-lg font-semibold">{text}</h3>
         </div>
         <div className="flex sm:flex-col flex-row ">
-          <div className="sm:mb-5 mr-5">
+          <div className="sm:mb-5 mr-8">
             <h4 className="font-bold sm:text-sm text-lg">feels Like:</h4>
             <span className="font-bold sm:text-4xl text-8xl">
               {feelslike_c}°

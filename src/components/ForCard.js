@@ -7,9 +7,9 @@ export const ForCard = ({ info }) => {
 
   return (
     <div>
-      <div class="flex flex-col items-center space-y-1 hover:bg-gray-300 rounded p-2">
+      <div className="flex flex-col hover:-translate-y-3 duration-150 hover:scale-300 ease-in-out delay-150 items-center space-y-1 hover:bg-gray-300 rounded p-2">
         <span>{date}</span>
-        <img src={icon} alt="" />
+        <img className="hover:animate-bounce" src={icon} alt="" />
         <span>{maxtemp_c}°</span>
       </div>
     </div>
